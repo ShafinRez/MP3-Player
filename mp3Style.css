@@ -1,0 +1,240 @@
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    height:100vh;
+}
+
+img{
+    max-width: 80%;
+    position: relative;
+    left:45px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    box-shadow: 1px 0px 5px whitesmoke, -1px 0px 5px whitesmoke;
+}
+
+.img img{
+    cursor: pointer;
+}
+
+img:hover{
+    box-shadow: 1px 0px 10px rgb(255, 255, 255), -1px 0px 10px rgb(255, 255, 255);
+    transform: scale(1.02);
+    transition: all 0.5s;
+}
+
+
+.Player{
+    background-color: black;
+    width: 475px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px black, -1px -1px 30px #000000;
+    color:darkorange;
+    overflow: hidden;
+}
+.icons h1{
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    top:-10px;
+    border-bottom: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    left:-20px;
+    padding-bottom: 5px;
+}
+
+.icons a{
+    transition: all 0.3s;
+}
+
+a.artistlink:link, a.artistlink:visited { 
+    text-decoration:none; 
+    font-weight:bold; 
+    font-size: 18px;
+    color: rgba(255,140,0,0.8);
+}
+
+.mp3content p{
+    display: contents;
+}
+
+a.artistlink:hover{
+    color:rgb(255, 199, 136);
+}
+
+.mp3content{
+    text-align: center;
+    position: relative;
+}
+
+.icons{
+    position: relative;
+    left:20px;
+}
+
+.repeat-btns a{
+    margin: 0 20px;
+}
+
+.slider {
+    position: relative;
+    left: 30px;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.volume-up{
+    position: relative;
+    left: 20px;
+    color: aliceblue;
+}
+
+.volume-up:hover{
+    color: rgba(240,248,255,0.5);
+    transition: all 0.3s;
+}
+
+i[class='fa fa-bars']{
+    position: relative;
+    top:18px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+i[class='fa fa-bars']:hover{
+    color: rgba(240,248,255,0.5);
+}
+
+i[class='far fa-heart']{
+    position: relative;
+    top:550px;
+    left:20px;
+    color: aliceblue;
+    font-size: 35px;
+}
+
+i[class='far fa-heart']:hover{
+    color: rgba(255, 0, 0, 0.90);
+    transition: all 0.3s;
+}
+
+i[class="fab fa-spotify"]{
+    position: relative;
+    left:350px;
+    top:553px;
+    color: aliceblue;
+    font-size: 37px;
+}
+
+i[class="fab fa-spotify"]:hover{
+    color: limegreen;
+    transition: all 0.3s;
+}
+
+
+i[class="fa fa-random"]{
+    position: relative;
+    top:-26px;
+    right:-55px;
+    color: darkorange;
+    font-size: 1.5em;
+}
+
+i[class="fa fa-random"]:hover{
+    color: rgba(255,140,0, 0.5);
+}
+
+i[class="fa fa-retweet"]{
+    position: relative;
+    top:-26px;
+    right:55px;
+    color: darkorange;
+    font-size: 1.5em;
+}
+
+i[class="fa fa-retweet"]:hover{
+    color: rgba(255,140,0, 0.5);
+}
+
+.audio-btns{
+    text-align: center;
+}
+
+.play-btns a{
+    color: aliceblue;
+    margin: 10px;
+    font-size: 1.5em;
+    transition: all 0.5;
+}
+
+.play-btns a:hover{
+    color:rgba(240,248,255,0.5);
+    transition: all 0.3s;
+}
+
+
+.seek{
+    position: absolute;
+    width: 85%;
+    height: 1px;
+    background: rgb(255, 166, 56);
+    top: -15px;
+    left:33px;
+}
+
+.time{
+    position: absolute;
+    top: -12%;
+    left: 7%;
+    font-size: 12px;
+    color: rgb(250, 196, 131);
+}
+
+.endTime{
+    position: absolute;
+    top: -12%;
+    left: 85%;
+    font-size: 12px;
+    color: rgb(250, 196, 131);
+}
+
+.seek .fill{
+    width:0;
+    height: 1px;
+    background-color: white;
+}
+
+
+/*
+.audio-btns:hover{
+    background-color: darkorange;
+    padding: 15px;
+    height: 450px;
+    width:100%;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+*/

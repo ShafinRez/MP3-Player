@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel = 'stylesheet' type="text/css" href ='mp3Style.css'>
+    <title>Music Player</title>
+    
+</head>
+<body>
+    <div class="Player">
+        <div class="container">
+
+            <div class="icons">
+                <!-- icons -->
+                <a href = "#"><i class = "fa fa-bars"></i></a>
+                <h1>My Music Rotation</h1>
+                <a href = "# " onclick="liked()"><i class = "far fa-heart"></i></a>
+                <a href = 'https://open.spotify.com/playlist/5fSXPU13qwWMeLXny5iQEd' target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+
+            <div class = 'img'>
+                <img src="Giveon - When It's All Said And Done.jpg" alt=""/>
+            </div>
+            <div class="mp3content">
+                <div class='title'>
+                    <h1 class="songTitle">When It's All Said And Done</h1>
+                    <a href='https://open.spotify.com/artist/4fxd5Ee7UefO4CUXgwJ7IP' class = 'artistlink' target="_blank"><p>Giveon</p></a>
+                </div>
+                
+                <div class='time'>
+                    00:00
+                </div>
+                <div class='endTime'>
+                    00:00
+                </div>
+                
+    
+                <div class='seek'>
+                    <div class='fill'></div>
+                </div>
+            </div>
+            
+
+            <div class='audio-btns'>
+                <div class='play-btns'>
+                    <a href="#"><i class="fa fa-backward" onclick="prevAudio()"></i></a>
+                    <a href="#" class='play-pause' onclick="togglePlay()"><i class="fa fa-play"></i></a>
+                    <a href="#"><i class="fa fa-forward" onclick="nextAudio()"></i></a>
+                </div>
+
+                <div class="repeat-btns">
+                    <a href="#" class ='repeat'><i class="fa fa-retweet"></i></a>
+                    <a href="#"><i class="fa fa-random" onclick="shuffle()"></i></a>
+                    <div class="volume">
+                        <input class='slider' type='range' min='0' max="100" value="50" oninput="volume(this.value)" onchange="volume(this.value)"> 
+                        <a href="#" class='volume-up'><i class="fa fa-volume-up" onclick="mute()" ></i></a>
+                    </div>
+                        
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<script src='mp3.js'></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+</body>
+</html>
